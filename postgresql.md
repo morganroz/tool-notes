@@ -1,5 +1,7 @@
 # PostgresSQL Notes
 
+Homebrew installed executables here: '/usr/local/Cellar/postgresql/12.3_1/bin'
+
 ## SELECT statements
 
 || is a concatenation operator
