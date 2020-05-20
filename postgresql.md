@@ -1,5 +1,7 @@
 # PostgresSQL Notes
 
+This [basic tutorial](https://www.postgresqltutorial.com) is very helpful.
+
 ## Installation
 ```shell
 brew install postgresql
