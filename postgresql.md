@@ -1,9 +1,9 @@
 # PostgresSQL Notes
 
 ## Installation
-'''shell
+```shell
 brew install postgresql
-'''
+```
 
 Homebrew installed executables here: '/usr/local/Cellar/postgresql/12.3_1/bin'
 
