@@ -9,6 +9,12 @@ Homebrew installed executables here: '/usr/local/Cellar/postgresql/12.3_1/bin'
 
 ## Creating a Database
 
+Create a new databse under postgres owner:
+```sql
+CREATE DATABASE dbname
+WITH OWNER=postgres;
+```
+
 ## SELECT Statements
 
 - || is a concatenation operator
