@@ -7,6 +7,12 @@ brew install postgresql
 
 Homebrew installed executables here: '/usr/local/Cellar/postgresql/12.3_1/bin'
 
+## Basic Navigation
+
+- Connect to a database: \connect dbname;
+- List databases: \l
+- List tables: \dt
+
 ## Creating a Database
 
 Create a new databse under postgres owner:
