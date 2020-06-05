@@ -37,6 +37,40 @@ sudo apachectl restart
 ### I modified the aliases to allow myself to access the /Sites directory at the following address when Apache is running:
 http://www.example.localhost/~morganrozman/
 
+## Enabling Python CGI
+
+1. Uncomment the following lines in /etc/apache2/httpd.conf
+```
+LoadModule cgi_module libexec/apache2/mod_cgi.so
+Include /private/etc/apache2/extra/httpd-vhosts.conf
+```
+
+2. In /private/etc/apache2/extra/httpd-vhosts.conf, create a new container as:
+```
+<VirtualHost *:80>
+    ServerAdmin morganleerozman@gmail.com
+    DocumentRoot "/Users/morganrozman/Sites/covid-visualizations"
+    ScriptAlias /cgi-bin "/Users/morganrozman/Sites/covid-visualizations"
+    <Directory "/Users/morganrozman/Sites/covid-visualizations">
+        AllowOverride All
+        Require all granted
+        AddHandler cgi-script .cgi .py
+        Options Indexes MultiViews ExecCGI FollowSymlinks
+    </Directory>
+    ServerName covid-visualizations.localhost
+    DirectoryIndex index.html
+    ErrorLog "/private/var/log/apache2/covid-error_log"
+    CustomLog "/private/var/log/apache2/covid-access_log" common
+</VirtualHost>
+```
+
+3. Create the two log files via ```sudo touch /private/var/log/apache2/covid-error_log``` and ```sudo touch /private/var/log/apache2/covid-access_log```.
+
+4. Add this line to /etc/hosts:
+```
+127.0.0.1    covid-visualizations.localhost
+```
+
 ## Problems
 
 #### Problem 1
