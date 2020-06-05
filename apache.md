@@ -39,6 +39,8 @@ http://www.example.localhost/~morganrozman/
 
 ## Enabling Python CGI
 
+[This video](https://www.youtube.com/watch?v=OQeJ_GZAYCg) was helpful in setting this up.
+
 1. Uncomment the following lines in /etc/apache2/httpd.conf
 ```
 LoadModule cgi_module libexec/apache2/mod_cgi.so
