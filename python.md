@@ -1,5 +1,12 @@
 # Python Notes
 
+#### Outline
+- [Virtual Environments](#virtual-environments)
+- [Postgres](#working-with-postgres)
+- [Testing](#testing)
+- [Cleanup and Optimizations](#cleanup-and-optimizations)
+- [Course Notes](#python-course-notes)
+
 ## Virtual Environments
 
 ### virtualenv
