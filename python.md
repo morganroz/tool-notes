@@ -34,6 +34,8 @@ deactivate
 
 ### virtualenvwrapper
 
+virtualenvwrapper provides a nice way to keep all envs in one place and manage them.
+
 I had to add this to my .bash_profile:
 
 ```sh
@@ -63,6 +65,20 @@ To connect to a local database in a Python script, use the psycopg2 module:
 ```sh
 pip3 install psycopg2
 ```
+
+## Testing
+
+##### unittest
+
+```python3 -m unittest discover ./tests```
+
+##### ddt
+
+##### coverage
+
+```pip3 install coverage```
+```coverage run --source="SOURCE_DIR" -m unittest discover ./tests```
+```coverage report -m```
 
 ## Cleanup and Optimizations
 ### Profilers
