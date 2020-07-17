@@ -43,10 +43,26 @@
 	- Decorate with ```@staticmethod``` to flag it
 	- Don't take ```self``` or ```cls```, so they can't change an instance or the class
 	- Mainly used as a way to namespace your methods
+	- Work like regular functions but belong to the class's and every instance's namespace
 
 #### public vs. private methods
+
+- Private methods
+	- Only accessible from within the class
+	- Used to hide the inner functionality from the outside
+	- Prefix the method with a double underscore.
+- Public methods
+	- Accessible outside of the class
+
+
 #### inheritance vs. composition  
 
+- Inheritance
+	- Models an 'is a' relationship
+	- A subclass is derived from/extends a super class
+- Composition
+	- Models a 'has a' relationship
+	- Allows you to add an object to another object
 
 ## Tutorial Notes
 
