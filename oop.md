@@ -1,7 +1,8 @@
 # Object Oriented Programming in Python
 
 - [Concepts](#concepts)
-- [Tutorial](#course-notes)
+<!-- - [Tutorial](#course-notes) -->
+- [Resources](#resources)
 
 ## Concepts
 
@@ -64,7 +65,7 @@
 	- Models a 'has a' relationship
 	- Allows you to add an object to another object
 
-## Tutorial Notes
+<!-- ## Tutorial Notes
 
 Encapsulation: bundling data with code operating on it  
 Class: blueprint for objects that outlines states and behaviors  
@@ -73,6 +74,8 @@ attribute call: obj.attr
 method call: obj.method()  
 
 #### Class Creation
+
+```help(object)``` gives you information on that object and the methods/attributes it has (if in docstring).
 
 ##### Basic Example
 ```python3
@@ -102,4 +105,12 @@ c1 = myClass()
 c1.set_name("Morgan")
 ```
 
-To add a
+To add a -->
+
+## Resources
+
+1. [Real Python](https://realpython.com/python3-object-oriented-programming/)
+2. [Python Documentation](https://docs.python.org/3/tutorial/classes.html)
+4. [GeeksforGeeks](https://www.geeksforgeeks.org/private-methods-in-python/)
+3. [Code Fellows](https://codefellows.github.io/sea-python-401d4/lectures/inheritance_v_composition.html)
+
